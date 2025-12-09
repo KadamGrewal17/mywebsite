@@ -1,80 +1,501 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dhillon Quest</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dhillon Quest | Management Consultancy</title>
+  <meta name="description" content="Dhillon Quest is a modern management consultancy helping organisations align strategy, simplify operating models, and deliver measurable transformation." />
+
+  <!-- Fonts (optional, but adds a modern feel) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-  <!-- Navigation Bar -->
-  <nav class="navbar">
-    <div class="container nav-container">
-      <div class="logo">Dhillon Quest</div>
-      <ul class="nav-links">
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
+  <a class="skip-link" href="#home">Skip to content</a>
 
-  <!-- Hero Section -->
-  <section id="hero" class="hero">
-    <h1>Welcome to Dhillon Quest</h1>
-    <p>We provide innovative solutions to help your business grow and succeed.</p>
-    <a href="#about" class="btn">Learn More</a>
-  </section>
+  <!-- Subtle background blobs -->
+  <div class="bg-accents" aria-hidden="true">
+    <span class="blob blob-1"></span>
+    <span class="blob blob-2"></span>
+  </div>
 
-  <!-- About Section -->
-  <section id="about" class="about">
-    <h2>About Us</h2>
-    <p>Dhillon Quest is dedicated to delivering high-quality services and solutions that make a real impact. With years of expertise, we pride ourselves on excellence, innovation, and customer satisfaction.</p>
-  </section>
+  <!-- NAV -->
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#home">
+        <span class="brand-mark">DQ</span>
+        <span class="brand-text">Dhillon <em>Quest</em></span>
+      </a>
 
-  <!-- Services Section -->
-  <section id="services" class="services">
-    <h2>Our Services</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Consulting</h3>
-        <p>We tailor our consulting to meet your needs and drive success.</p>
-      </div>
-      <div class="card">
-        <h3>Product Development</h3>
-        <p>From idea to launch, we help build innovative products.</p>
-      </div>
-      <div class="card">
-        <h3>Support & Maintenance</h3>
-        <p>Our team ensures your systems run smoothly with reliable support.</p>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#services">Services</a>
+        <a href="#approach">Approach</a>
+        <a href="#case-studies">Case Studies</a>
+        <a href="#insights">Insights</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn btn-ghost" href="#contact">Talk to us</a>
+        <a class="btn btn-primary" href="#book">Book a consultation</a>
       </div>
     </div>
-  </section>
+  </header>
 
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <h2>Get in Touch</h2>
-    <p>Ready to work with us? Reach out through any of the methods below.</p>
-    <div class="grid">
-      <div class="card">
-        <p class="label">Email</p>
-        <p>contact@dhillonquest.com</p>
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="pill">
+            <span class="pill-dot"></span>
+            Trusted, practical, outcome-led consulting
+          </div>
+
+          <h1>
+            Strategic clarity for complex growth.
+            <span>Built for leaders who need results, not decks.</span>
+          </h1>
+
+          <p>
+            Dhillon Quest is a modern management consultancy helping organisations align strategy,
+            simplify operating models, and deliver measurable transformation. We blend rigorous analysis
+            with hands-on execution to move from insight to impact.
+          </p>
+
+          <div class="hero-cta">
+            <a class="btn btn-primary btn-lg" href="#book">Book a 30-minute discovery</a>
+            <a class="btn btn-outline btn-lg" href="#case-studies">View results</a>
+          </div>
+
+          <div class="stats">
+            <div class="stat">
+              <div class="stat-label">Decision speed</div>
+              <div class="stat-value">+40%</div>
+            </div>
+            <div class="stat">
+              <div class="stat-label">Efficiency gains</div>
+              <div class="stat-value">10–25%</div>
+            </div>
+            <div class="stat">
+              <div class="stat-label">Time-to-value</div>
+              <div class="stat-value">6–12 wks</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-panel">
+          <div class="panel-card">
+            <div class="panel-head">
+              <span class="panel-kicker">Advisory snapshot</span>
+              <span class="panel-tag">Sample dashboard</span>
+            </div>
+
+            <div class="panel-grid">
+              <div class="mini">
+                <div class="mini-title">Portfolio focus</div>
+                <div class="mini-sub">Prioritise the right bets</div>
+              </div>
+              <div class="mini">
+                <div class="mini-title">Operating model</div>
+                <div class="mini-sub">Design for speed</div>
+              </div>
+              <div class="mini">
+                <div class="mini-title">Transformation</div>
+                <div class="mini-sub">Deliver measurable change</div>
+              </div>
+              <div class="mini">
+                <div class="mini-title">Capability</div>
+                <div class="mini-sub">Uplift leaders & teams</div>
+              </div>
+            </div>
+
+            <div class="panel-foot">
+              <div class="panel-check">
+                <span class="check-dot"></span>
+                A disciplined approach across diagnosis, blueprint, and execution support.
+              </div>
+
+              <div class="chips">
+                <span class="chip">Diagnostic sprint</span>
+                <span class="chip">Roadmap</span>
+                <span class="chip">Embedded delivery</span>
+                <span class="chip">Executive workshops</span>
+                <span class="chip">Governance</span>
+                <span class="chip">AI-ready ops</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="card">
-        <p class="label">Phone</p>
-        <p>+1 (555) 123-4567</p>
+    </section>
+
+    <!-- SECTOR STRIP -->
+    <section class="sector-strip">
+      <div class="container sector-inner">
+        <div class="strip-title">Experience across sectors</div>
+        <div class="strip-pills">
+          <span>Financial Services</span>
+          <span>Manufacturing</span>
+          <span>Technology</span>
+          <span>Healthcare</span>
+        </div>
       </div>
-      <div class="card">
-        <p class="label">Website</p>
-        <p>www.dhillonquest.com</p>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">What we do</div>
+          <h2>Consulting that feels lighter — and lands harder.</h2>
+          <p>
+            We focus on the intersection of strategy, operating model, and measurable performance.
+            Our work is designed to be pragmatic, fast-moving, and aligned to leadership priorities.
+          </p>
+        </div>
+
+        <div class="cards-3">
+          <article class="card">
+            <div class="icon-box">↗</div>
+            <h3>Strategy & Growth</h3>
+            <p>Clear priorities, sharper positioning, and practical roadmaps that move the needle.</p>
+            <ul>
+              <li>Market & competitor intelligence</li>
+              <li>Portfolio and GTM strategy</li>
+              <li>3–12 month execution plans</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="icon-box">◎</div>
+            <h3>Operating Model</h3>
+            <p>Align people, process, and technology for faster decisions and cleaner delivery.</p>
+            <ul>
+              <li>Org design & governance</li>
+              <li>Process simplification</li>
+              <li>Capability building</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="icon-box">▦</div>
+            <h3>Performance & Transformation</h3>
+            <p>Turn complexity into measurable outcomes with disciplined transformation support.</p>
+            <ul>
+              <li>KPI architecture</li>
+              <li>Cost-to-serve optimisation</li>
+              <li>Change programs</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- APPROACH -->
+    <section id="approach" class="section section-alt">
+      <div class="container two-col">
+        <div>
+          <div class="eyebrow">How we work</div>
+          <h2>A lean three-phase method.</h2>
+          <p>
+            We keep the approach simple, so teams can move quickly. Each phase ends with clear
+            decisions and a tangible output that leadership can use immediately.
+          </p>
+
+          <div class="steps">
+            <div class="step">
+              <div class="step-num">01</div>
+              <div>
+                <div class="step-title">Diagnostic Sprint</div>
+                <div class="step-desc">Rapid discovery to isolate the highest-impact levers and risks.</div>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num">02</div>
+              <div>
+                <div class="step-title">Blueprint & Roadmap</div>
+                <div class="step-desc">Align priorities, define the operating design, and plan execution.</div>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num">03</div>
+              <div>
+                <div class="step-title">Embedded Delivery</div>
+                <div class="step-desc">Hands-on support to implement change and track outcomes.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="chips mt-20">
+            <span class="chip">Executive alignment</span>
+            <span class="chip">Quantified business case</span>
+            <span class="chip">Change enablement</span>
+            <span class="chip">Governance light, effective</span>
+          </div>
+        </div>
+
+        <div class="approach-side">
+          <div class="side-card">
+            <div class="side-head">
+              <span class="brand-mark sm">DQ</span>
+              <span class="side-title">Outcome design</span>
+            </div>
+
+            <div class="side-block">
+              <div class="side-block-title">What success looks like</div>
+              <div class="side-block-desc">Define 3–5 measurable outcomes with leading and lagging indicators.</div>
+            </div>
+            <div class="side-block">
+              <div class="side-block-title">Minimum viable change</div>
+              <div class="side-block-desc">Ship the smallest set of improvements that unlock immediate value.</div>
+            </div>
+            <div class="side-block">
+              <div class="side-block-title">Sustained capability</div>
+              <div class="side-block-desc">Train internal leaders so progress continues after the engagement.</div>
+            </div>
+
+            <div class="side-foot">
+              <div class="eyebrow small">Typical engagement</div>
+              <div class="side-foot-text">6–12 weeks for focused programs, with optional ongoing advisory retainers.</div>
+              <div class="chips mt-12">
+                <span class="chip">Fixed-scope sprints</span>
+                <span class="chip">Leadership workshops</span>
+                <span class="chip">Hybrid delivery</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CASE STUDIES -->
+    <section id="case-studies" class="section">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Proof</div>
+          <h2>Selected outcomes.</h2>
+          <p>
+            Replace these with real client stories once available. Even anonymised case studies
+            dramatically improve trust for consultancy websites.
+          </p>
+        </div>
+
+        <div class="cards-3">
+          <article class="card">
+            <div class="badge">Financial Services</div>
+            <h3>Reduced decision cycle by 40%</h3>
+            <p>A streamlined governance model and prioritised portfolio improved speed without increasing risk.</p>
+            <div class="metric">-40% decision cycle</div>
+          </article>
+
+          <article class="card">
+            <div class="badge">Manufacturing</div>
+            <h3>Improved margin visibility</h3>
+            <p>A cost-to-serve framework clarified product profitability and informed pricing strategy.</p>
+            <div class="metric">+12% margin clarity</div>
+          </article>
+
+          <article class="card">
+            <div class="badge">Tech Scale-up</div>
+            <h3>From growth chaos to repeatable GTM</h3>
+            <p>A phased GTM blueprint and enablement program created consistent pipeline performance.</p>
+            <div class="metric">+28% qualified pipeline</div>
+          </article>
+        </div>
+
+        <div class="section-actions">
+          <a class="btn btn-outline" href="#contact">Request full case studies</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- INSIGHTS -->
+    <section id="insights" class="section section-alt">
+      <div class="container two-col">
+        <div>
+          <div class="eyebrow">Insights</div>
+          <h2>Thought leadership without the fluff.</h2>
+          <p>
+            A simple insights section builds credibility. Start with short, practical posts:
+            frameworks, lessons learned, and commentary on operational trends.
+          </p>
+
+          <div class="chips mt-20">
+            <span class="chip">Operating model design</span>
+            <span class="chip">AI-ready processes</span>
+            <span class="chip">Leadership cadence</span>
+            <span class="chip">Cost-to-serve</span>
+          </div>
+
+          <div class="section-actions">
+            <a class="btn btn-primary" href="#contact">Subscribe for updates</a>
+          </div>
+        </div>
+
+        <div class="insight-list">
+          <article class="card compact">
+            <div class="badge light">Framework</div>
+            <h3>The 3-layer operating model audit</h3>
+            <p>A practical way to diagnose where strategy breaks down between leadership intent and frontline reality.</p>
+          </article>
+
+          <article class="card compact">
+            <div class="badge light">Guide</div>
+            <h3>Designing KPIs leaders actually use</h3>
+            <p>How to reduce metric overload and build a small, decision-linked performance system.</p>
+          </article>
+
+          <article class="card compact">
+            <div class="badge light">Perspective</div>
+            <h3>AI adoption starts with process clarity</h3>
+            <p>Why most AI initiatives stall — and how to prepare your operating model before tooling.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOKING -->
+    <section id="book" class="section">
+      <div class="container">
+        <div class="booking">
+          <div>
+            <div class="eyebrow">Appointments</div>
+            <h2>Book a discovery call.</h2>
+            <p>
+              Replace the placeholder with your embedded booking calendar.
+              In WordPress, you’d paste your booking plugin shortcode here.
+              If using a provider like Calendly, embed their script/iframe.
+            </p>
+            <div class="chips mt-20">
+              <span class="chip">30 minutes</span>
+              <span class="chip">Video or phone</span>
+              <span class="chip">No obligation</span>
+            </div>
+          </div>
+
+          <div class="booking-widget">
+            <div class="booking-widget-head">
+              <span class="booking-dot"></span>
+              Booking widget placeholder
+            </div>
+            <p>
+              Drop your calendar embed here.
+            </p>
+            <div class="booking-grid">
+              <div>Mon–Fri</div>
+              <div>9:00–17:00</div>
+              <div>UK time</div>
+              <div>Auto-confirm</div>
+            </div>
+            <a class="btn btn-outline w-full" href="#">Embed calendar here</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section-alt">
+      <div class="container two-col">
+        <div>
+          <div class="eyebrow">Contact</div>
+          <h2>Let’s explore your priorities.</h2>
+          <p>
+            Share a brief overview of your challenge. We’ll respond with suggested next steps
+            and a short diagnostic agenda.
+          </p>
+
+          <div class="contact-tiles">
+            <div class="tile">
+              <div class="tile-label">Email</div>
+              <div class="tile-value">hello@dhillonquest.com</div>
+            </div>
+            <div class="tile">
+              <div class="tile-label">Location</div>
+              <div class="tile-value">United Kingdom</div>
+            </div>
+            <div class="tile">
+              <div class="tile-label">Engagements</div>
+              <div class="tile-value">Project & retainer</div>
+            </div>
+            <div class="tile">
+              <div class="tile-label">Response time</div>
+              <div class="tile-value">1–2 business days</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-card">
+          <form>
+            <label>
+              <span>Name</span>
+              <input type="text" placeholder="Your name" />
+            </label>
+
+            <label>
+              <span>Work email</span>
+              <input type="email" placeholder="name@company.com" />
+            </label>
+
+            <label>
+              <span>Company</span>
+              <input type="text" placeholder="Company name" />
+            </label>
+
+            <label>
+              <span>What are you working on?</span>
+              <textarea rows="4" placeholder="A short description of your goals, constraints, and timeline"></textarea>
+            </label>
+
+            <button class="btn btn-primary w-full" type="button">
+              Send inquiry
+            </button>
+
+            <small class="muted">
+              This is a visual placeholder form. Connect it to a WordPress form plugin or your backend.
+            </small>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="brand-mark">DQ</span>
+        <div>
+          <div class="footer-name">Dhillon Quest</div>
+          <div class="footer-sub">Management consultancy</div>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <a href="#services">Services</a>
+        <a href="#approach">Approach</a>
+        <a href="#case-studies">Case studies</a>
+        <a href="#book">Book</a>
+        <a href="#contact">Contact</a>
       </div>
     </div>
-  </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <p>&copy; <script>document.write(new Date().getFullYear())</script> Dhillon Quest. All rights reserved.</p>
+    <div class="container footer-bottom">
+      <div>© <span id="year"></span> Dhillon Quest. All rights reserved.</div>
+      <div class="footer-badges">
+        <span>Privacy</span>
+        <span>Terms</span>
+      </div>
+    </div>
   </footer>
+
+  <script>
+    // tiny enhancement for footer year
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
